@@ -4,7 +4,7 @@ const ListLink = props => (
   <li
     style={{
       display: `inline-block`,
-      marginRight: `1rem`,
+      marginRight: `0.5rem`,
     }}
   >
     <Link to={props.to}>{props.children} </Link>
@@ -16,7 +16,7 @@ export default ({ children }) => (
     <header style={{ marginBottom: `5rem` }}>
       <Link
         to="/"
-        tyle={{ textShadow: `none`, backgroundImage: `none` }}
+        style={{ textShadow: `none`, backgroundImage: `none` }}
       ></Link>
       <h3 style={{ display: `inline` }}>Shiya & Japs</h3>
       <ul
