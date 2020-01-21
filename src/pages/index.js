@@ -5,7 +5,9 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <Header about="Together Forever" />
+    <div style={{ textAlign: `center` }}>
+      <Header about="Together Forever" />
+    </div>
     <h3 style={{ textAlign: `center`, padding: `0 0 3rem` }}>
       Story of Shiya & Jeps
     </h3>
