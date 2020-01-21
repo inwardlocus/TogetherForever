@@ -3,19 +3,19 @@
 
 h1 {
   font-family: "Arvo", serif;
-  padding-left: 1rem;
+  /* padding-left: 1rem;
   background-color: darkorange;
-  border-bottom-style: dotted;
+  border-bottom-style: solid;
   border-bottom-color: seagreen;
-  border-bottom-width: 0.3rem;
+  border-bottom-width: 0.3rem; */
 }
 p {
   font-family: "Arvo", serif;
 }
 h3 {
   font-family: "Architects Daughter", cursive;
-  background-color: darkmagenta;
+  /* background-color: darkmagenta;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: white;
+  color: white; */
 }
