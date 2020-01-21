@@ -12,12 +12,15 @@ const ListLink = props => (
 )
 
 export default ({ children }) => (
-  <div style={{ margin: `2rem auto`, maxWidth: 650, padding: `0 1rem` }}>
+  <div
+    style={{
+      margin: `2rem auto`,
+      maxWidth: 720,
+      padding: `0 1rem`,
+    }}
+  >
     <header style={{ marginBottom: `5rem` }}>
-      <Link
-        to="/"
-        style={{ textShadow: `none`, backgroundImage: `none` }}
-      ></Link>
+      <Link to="/"></Link>
       <h3 style={{ display: `inline` }}>Shiya & Japs</h3>
       <ul
         style={{
