@@ -14,6 +14,9 @@ export default () => (
 
     <ul>
       <li>
+        <Link to="/Story/landing/">Landing Page</Link>
+      </li>
+      <li>
         <Link to="/Story/1/">The One With The Blind Dates</Link>
       </li>
       <li>
