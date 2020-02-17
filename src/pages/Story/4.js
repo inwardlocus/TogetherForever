@@ -1,15 +1,13 @@
 import React from "react"
 import Header from "../../components/header"
 import Layout from "../../components/layout"
+import four from "../../images/4.jpg"
 
 export default () => (
   <Layout>
     <div style={{ textAlign: `center` }}>
       <Header about="The One After 'I Do' " />
-      <img
-        src="https://i.pinimg.com/originals/4f/68/fe/4f68fe654645ea9e9f2374638b3e0daf.png"
-        alt="tf"
-      ></img>
+      <img src={four} alt="tf"></img>
     </div>
   </Layout>
 )
