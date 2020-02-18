@@ -1,15 +1,18 @@
-Story Titel Fonts:
+**Story Titel Fonts**
 https://www.dafont.com/gabriel-weiss-friends.font
 
-Transition Link
+**Transition Link**
 https://gatsby-plugin-transition-link.netlify.com/
 
-Color ideas
+Transition with background.
 
-Background
+> > Zero to One transtion with animation
+> > subsequent transitions with Lyric Quote and loading
+
+**Background for summary**
 #BC3440
 
-css animation ideas
+**css animation ideas**
 
 1. https://codepen.io/lindell/pen/yJXqBb (For transition)
 2. https://codepen.io/maicodes/pen/RWeNpW (for "days to go")
