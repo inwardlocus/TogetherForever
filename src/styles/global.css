@@ -5,6 +5,12 @@
   --color-primary: #1ca086;
   --color-secondary: #11a39b;
   --color-tertiary: #069ba7;
+  --color-summary-background: #bc3440;
+  --color-background: #fff5f4;
+}
+
+body {
+  background-color: var(--color-background);
 }
 
 h1 {
