@@ -18,3 +18,4 @@ Transition with background.
 2. https://codepen.io/maicodes/pen/RWeNpW (for "days to go")
 3. https://codepen.io/simeydotme/pen/xpuLs (for loading)
 4. https://codepen.io/neodern/pen/oKEyaw (For Summary)
+5. https://www.w3docs.com/snippets/css/how-to-create-polaroid-image-with-css.html (Polaroid Effect)
