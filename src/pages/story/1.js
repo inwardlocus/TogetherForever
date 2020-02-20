@@ -1,13 +1,12 @@
 import React from 'react';
-import Header from '../../components/header';
 import Layout from '../../components/layout';
 import one from '../../images/1.jpg';
+import { Link } from 'gatsby';
 
 export default () => (
-  <Layout>
+  <Layout pageTitle="The One With The Blind Dates">
     <div style={{ textAlign: `center` }}>
-      <Header about="The One With The Blind Dates" />
-      <img src={one} alt="tf"></img>
+      <img src={one} alt="tf" />
       <p>
         When the mist overwhelmed the "I" in me, I found you in the searching.
         Since then that magazine had been my go to place. They remind me of my
@@ -20,6 +19,7 @@ export default () => (
         thought of you as I thought of no other living person. And as I thought
         of you, life became better. And higher and much more beautiful.
       </p>
+      <Link to="/story/2">Once more?</Link>
     </div>
   </Layout>
 );

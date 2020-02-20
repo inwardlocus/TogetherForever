@@ -1,13 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Header from '../components/header';
 import Layout from '../components/layout';
 
 export default () => (
-  <Layout>
-    <div style={{ textAlign: `center` }}>
-      <Header about="Together Forever Blog" />
-    </div>
+  <Layout pageTitle="Together Forever Blog">
+    <div style={{ textAlign: `center` }}></div>
 
     <p style={{ textAlign: `center` }}>
       Here,

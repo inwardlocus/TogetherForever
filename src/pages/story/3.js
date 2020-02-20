@@ -1,12 +1,13 @@
 import React from 'react';
-import Header from '../../components/header';
 import Layout from '../../components/layout';
 import three from '../../images/3.jpg';
+import { Link } from 'gatsby';
+
 export default () => (
-  <Layout>
+  <Layout pageTitle="The One Where Everybody Finds Out">
     <div style={{ textAlign: `center` }}>
-      <Header about="The One Where Everybody Finds Out" />
-      <img src={three} alt="tf"></img>
+      <img src={three} alt="tf" />
+      <Link to="/story/4">Mustn't we?</Link>
     </div>
   </Layout>
 );

@@ -1,13 +1,13 @@
 import React from 'react';
-import Header from '../../components/header';
 import Layout from '../../components/layout';
 import five from '../../images/5.jpg';
+import { Link } from 'gatsby';
 
 export default () => (
-  <Layout>
+  <Layout pageTitle="The One With The Vows">
     <div style={{ textAlign: `center` }}>
-      <Header about="The One With The Vows " />
-      <img src={five} alt="tf"></img>
+      <img src={five} alt="tf" />
+      <Link to="/story/summary">The End</Link>
     </div>
   </Layout>
 );
