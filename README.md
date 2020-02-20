@@ -1,4 +1,4 @@
-**Story Titel Fonts**
+**Story Title Fonts**
 https://www.dafont.com/gabriel-weiss-friends.font
 
 **Transition Link**

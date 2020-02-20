@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
+
+:root {
+  --color-primary: #1ca086;
+  --color-secondary: #11a39b;
+  --color-tertiary: #069ba7;
+}
 
 h1 {
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   /* padding-left: 1rem;
   background-color: darkorange;
   border-bottom-style: solid;
@@ -10,10 +16,10 @@ h1 {
   border-bottom-width: 0.3rem; */
 }
 p {
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
 }
 h3 {
-  font-family: "Architects Daughter", cursive;
+  font-family: 'Architects Daughter', cursive;
   /* background-color: darkmagenta;
   padding-left: 1rem;
   padding-right: 1rem;
