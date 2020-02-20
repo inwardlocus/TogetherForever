@@ -1,7 +1,7 @@
-import React from "react"
-import Header from "../../components/header"
-import Layout from "../../components/layout"
-import five from "../../images/5.jpg"
+import React from 'react';
+import Header from '../../components/header';
+import Layout from '../../components/layout';
+import five from '../../images/5.jpg';
 
 export default () => (
   <Layout>
@@ -10,4 +10,4 @@ export default () => (
       <img src={five} alt="tf"></img>
     </div>
   </Layout>
-)
+);

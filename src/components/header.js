@@ -1,2 +1,2 @@
-import React from "react"
-export default props => <h1>{props.about}</h1>
+import React from 'react';
+export default props => <h1>{props.about}</h1>;

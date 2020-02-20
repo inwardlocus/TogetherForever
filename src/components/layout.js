@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 const ListLink = props => (
   <li
     style={{
@@ -9,7 +9,7 @@ const ListLink = props => (
   >
     <Link to={props.to}>{props.children} </Link>
   </li>
-)
+);
 
 export default ({ children }) => (
   <div
@@ -36,4 +36,4 @@ export default ({ children }) => (
 
     {children}
   </div>
-)
+);

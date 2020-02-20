@@ -1,7 +1,7 @@
-import React from "react"
-import Header from "../../components/header"
-import Layout from "../../components/layout"
-import one from "../../images/1.jpg"
+import React from 'react';
+import Header from '../../components/header';
+import Layout from '../../components/layout';
+import one from '../../images/1.jpg';
 
 export default () => (
   <Layout>
@@ -22,4 +22,4 @@ export default () => (
       </p>
     </div>
   </Layout>
-)
+);
