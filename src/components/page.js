@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({ children, pageTitle }) => (
+export default ({ children, title }) => (
   <div
     style={{
       margin: `2rem auto`,
@@ -23,7 +23,7 @@ export default ({ children, pageTitle }) => (
         text-align: center;
       `}
     >
-      {pageTitle}
+      {title}
     </h1>
     {children}
   </div>

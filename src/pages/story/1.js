@@ -1,10 +1,10 @@
 import React from 'react';
-import Layout from '../../components/layout';
+import Page from '../../components/page';
 import one from '../../images/1.jpg';
 import { Link } from 'gatsby';
 
 export default () => (
-  <Layout pageTitle="The One With The Blind Dates">
+  <Page title="The One With The Blind Dates">
     <div style={{ textAlign: `center` }}>
       <img src={one} alt="tf" />
       <p>
@@ -21,5 +21,5 @@ export default () => (
       </p>
       <Link to="/story/2">Once more?</Link>
     </div>
-  </Layout>
+  </Page>
 );

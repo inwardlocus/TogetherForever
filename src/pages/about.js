@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Page from '../components/page';
 
 export default () => (
-  <Layout pageTitle="Together Forever Blog">
+  <Page title="Together Forever Blog">
     <div style={{ textAlign: `center` }}></div>
 
     <p style={{ textAlign: `center` }}>
@@ -32,5 +32,5 @@ export default () => (
       Begin from Here.
       <br />
     </p>
-  </Layout>
+  </Page>
 );

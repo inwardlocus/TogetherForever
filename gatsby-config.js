@@ -7,5 +7,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-layout`,
   ],
 };
