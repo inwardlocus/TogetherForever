@@ -46,31 +46,39 @@ const IMAGES = [
 function Summary() {
   return (
     <Page title="Summary">
-      <div>
-        {IMAGES.map(image => (
-          <Link
-            className="item"
-            to={image.to}
-            key={image.src}
-            css={`
-              width: 100%;
+      {IMAGES.map(image => (
+        <Link
+          className="item"
+          to={image.to}
+          key={image.src}
+          css={`
+            width: 100%;
 
-              ${DEVICES.small} {
-                width: 50%;
-              }
+            ${DEVICES.small} {
+              width: 50%;
+            }
 
-              ${DEVICES.extraLarge} {
-                width: 30%;
-              }
-            `}
-          >
-            <div className="polaroid">
-              <img alt={image.caption} src={image.src} />
-              <div className="caption">{image.caption}</div>
+            ${DEVICES.extraLarge} {
+              width: 30%;
+            }
+          `}
+        >
+          <div className="polaroid">
+            <img alt={image.caption} src={image.src} />
+            <div
+              className="caption"
+              css={`
+                font-size: 1.8rem;
+                ${DEVICES.small} {
+                  font-size: 1rem;
+                }
+              `}
+            >
+              {image.caption}
             </div>
-          </Link>
-        ))}
-      </div>
+          </div>
+        </Link>
+      ))}
     </Page>
   );
 }
