@@ -6,9 +6,9 @@ import two from '../../images/2.jpg';
 import three from '../../images/3.jpg';
 import four from '../../images/4.jpg';
 import five from '../../images/5.jpg';
-import { Link } from 'gatsby';
 import './summary.css';
 import { DEVICES } from '../../config';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const IMAGES = [
   {
@@ -47,8 +47,10 @@ function Summary() {
   return (
     <Page title="Summary">
       {IMAGES.map(image => (
-        <Link
+        <AniLink
           className="item"
+          hex="#1ca086"
+          paintDrip
           to={image.to}
           key={image.src}
           css={`
@@ -77,7 +79,7 @@ function Summary() {
               {image.caption}
             </div>
           </div>
-        </Link>
+        </AniLink>
       ))}
     </Page>
   );

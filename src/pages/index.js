@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import styled from 'styled-components';
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(AniLink)`
   background-color: var(--color-primary);
   color: #fff;
   font-size: 1.5rem;
@@ -50,7 +50,9 @@ function Index() {
           display: flex;
         `}
       >
-        <StyledLink to="/story">Story</StyledLink>
+        <StyledLink paintDrip hex="#1ca086" to="/story">
+          Story
+        </StyledLink>
         <StyledLink
           css={`
             margin-left: 1rem;

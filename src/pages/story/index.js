@@ -8,8 +8,8 @@ export default props => (
   <Page title="Wish">
     <div style={{ textAlign: `center` }}>
       <Img fluid={props.data.image.childImageSharp.fluid} />
-      <AniLink paintDrip to="/story/1">
-        Wouldn't you?
+      <AniLink paintDrip to="/story/1" hex="#1ca086">
+        Story 1
       </AniLink>
     </div>
   </Page>

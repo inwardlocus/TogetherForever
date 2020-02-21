@@ -20,8 +20,8 @@ export default props => (
         thought of you as I thought of no other living person. And as I thought
         of you, life became better. And higher and much more beautiful.
       </p>
-      <AniLink paintDrip to="/story/2">
-        Once more?
+      <AniLink paintDrip to="/story/2" hex="#1ca086">
+        Story 2
       </AniLink>
     </div>
   </Page>
