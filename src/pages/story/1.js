@@ -1,10 +1,11 @@
 import React from 'react';
 import Page from '../../components/Page';
 import Img from 'gatsby-image';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export default props => (
-  <Page title="The One With The Blind Dates">
+  <Page title="The One With The Blind Dates" {...props}>
     <div style={{ textAlign: `center` }}>
       <Img fluid={props.data.image.childImageSharp.fluid} />
       <p>
@@ -19,7 +20,9 @@ export default props => (
         thought of you as I thought of no other living person. And as I thought
         of you, life became better. And higher and much more beautiful.
       </p>
-      <Link to="/story/2">Once more?</Link>
+      <AniLink paintDrip to="/story/2">
+        Once more?
+      </AniLink>
     </div>
   </Page>
 );
