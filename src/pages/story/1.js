@@ -1,12 +1,12 @@
 import React from 'react';
-import Page from '../../components/page';
-import one from '../../images/1.jpg';
-import { Link } from 'gatsby';
+import Page from '../../components/Page';
+import Img from 'gatsby-image';
+import { Link, graphql } from 'gatsby';
 
-export default () => (
+export default props => (
   <Page title="The One With The Blind Dates">
     <div style={{ textAlign: `center` }}>
-      <img src={one} alt="tf" />
+      <Img fluid={props.data.image.childImageSharp.fluid} />
       <p>
         When the mist overwhelmed the "I" in me, I found you in the searching.
         Since then that magazine had been my go to place. They remind me of my
@@ -23,3 +23,11 @@ export default () => (
     </div>
   </Page>
 );
+
+export const pageQuery = graphql`
+  query {
+    image: file(relativePath: { eq: "1.jpg" }) {
+      ...fluidImage
+    }
+  }
+`;

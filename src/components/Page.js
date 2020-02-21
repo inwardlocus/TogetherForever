@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 
 export default ({ children, title }) => (
   <div
@@ -28,3 +29,13 @@ export default ({ children, title }) => (
     {children}
   </div>
 );
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1080) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
