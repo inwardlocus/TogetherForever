@@ -8,17 +8,28 @@ export default props => (
   <Page title="The One With The Blind Dates" {...props}>
     <div style={{ textAlign: `center` }}>
       <Img fluid={props.data.image.childImageSharp.fluid} />
-      <p>
+      <p style={{ textAlign: `center` }}>
         When the mist overwhelmed the "I" in me, I found you in the searching.
-        Since then that magazine had been my go to place. They remind me of my
-        true self. We all have a testing place somewhere. The resting place of
+        Since then that magazine had been my go to place. It reminded me of my
+        true self. We all have a resting place somewhere. The resting place of
         my soul was your name beautiful printed in that magazine. That was the
-        place where my knowledge of you lived. Remember the days when we solved
-        some puzzles and read some articles. Those were the days the bond
-        between us began to unfold. You wrote. I read. Those words could connect
-        us with a mysterious thread of what has now become the tale of us. I
-        thought of you as I thought of no other living person. And as I thought
-        of you, life became better. And higher and much more beautiful.
+        place where my knowledge of you lived.
+      </p>
+      <p style={{ textAlign: `center` }}>
+        Remember the days when we solved some puzzles and read some articles.
+        You wrote. I read. Those blind dates were symphony of buoyant instants.
+      </p>
+      <p style={{ textAlign: `center` }}>
+        I thought of you as I thought of no other living person. And as I
+        thought of you, life became better and higher and much more beautiful.
+      </p>
+      <p style={{ textAlign: `center` }}>
+        "Depth of my dreams Stirred up my mind Is it mere curiosity or the
+        passion inclined?"
+      </p>
+      <p style={{ textAlign: `center` }}>
+        I waited for your emergence unpredictably until one fine day I received
+        a ping from you. And thus unfolded a tale of us.
       </p>
       <AniLink paintDrip to="/story/2" hex="#1ca086">
         Story 2
