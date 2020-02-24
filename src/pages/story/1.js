@@ -31,7 +31,7 @@ export default props => (
         I waited for your emergence unpredictably until one fine day I received
         a ping from you. And thus unfolded a tale of us.
       </p>
-      <AniLink paintDrip to="/story/2" hex="#1ca086">
+      <AniLink cover direction="left" to="/story/2" hex="#1ca086">
         Story 2
       </AniLink>
     </div>

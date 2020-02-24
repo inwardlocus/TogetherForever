@@ -8,6 +8,8 @@ import five from '../../images/5.jpg';
 import './summary.css';
 import { DEVICES } from '../../config';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import ButtonLink from '../../components/ButtonLink';
+import { Link } from 'gatsby';
 
 const IMAGES = [
   {
@@ -48,14 +50,11 @@ function Summary() {
       css={`
         background: var(--color-primary);
         color: var(--color-secondary);
+        padding: 2rem 0;
       `}
     >
-      <header
-        css={`
-          display: flex;
-        `}
-      >
-        <h3
+      <header>
+        <h1
           css={`
             font-family: 'Architects Daughter', cursive;
             text-align: center;
@@ -63,11 +62,14 @@ function Summary() {
           `}
         >
           Shiya & Japs
-        </h3>
+        </h1>
       </header>
       <h1
         css={`
           text-align: center;
+          margin-top: 3rem;
+          font-family: 'Caveat';
+          font-size: 3rem;
         `}
       >
         Summary
@@ -92,6 +94,10 @@ function Summary() {
                 width: 50%;
               }
 
+              ${DEVICES.medium} {
+                filter: grayscale(100%);
+              }
+
               ${DEVICES.extraLarge} {
                 width: 30%;
               }
@@ -102,9 +108,9 @@ function Summary() {
               <div
                 className="caption"
                 css={`
-                  font-size: 1.8rem;
+                  font-size: 2.4rem;
                   ${DEVICES.small} {
-                    font-size: 1rem;
+                    font-size: 1.6rem;
                   }
                 `}
               >
@@ -114,6 +120,26 @@ function Summary() {
           </AniLink>
         ))}
       </div>
+      <footer
+        css={`
+          width: 100%;
+          display: flex;
+        `}
+      >
+        <AniLink
+          css={`
+            font-size: 1.5rem;
+            color: var(--color-secondary);
+            margin: 2rem auto;
+            border-bottom: 2px solid var(--color-secondary);
+          `}
+          to="/"
+          cover
+          direction="right"
+        >
+          Home
+        </AniLink>
+      </footer>
     </div>
   );
 }

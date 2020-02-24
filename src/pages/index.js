@@ -1,28 +1,5 @@
 import React from 'react';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import styled from 'styled-components';
-
-const StyledLink = styled(AniLink)`
-  background-color: var(--color-green-1);
-  color: #fff;
-  font-size: 2rem;
-  padding: 1rem 3rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
-  border-bottom: 0.25rem solid var(--color-green-2);
-  transition: 0.1s;
-  box-shadow: 0 2px 3px #ccc;
-  position: relative;
-  text-shadow: none;
-  font-family: 'Quattrocento Sans';
-
-  :hover {
-    background-color: var(--color-green-2);
-    border-bottom-width: 0;
-    margin-top: 0.2rem;
-  }
-`;
+import ButtonLink from '../components/ButtonLink';
 
 function Index() {
   return (
@@ -51,17 +28,17 @@ function Index() {
           display: flex;
         `}
       >
-        <StyledLink paintDrip hex="#1ca086" to="/story">
+        <ButtonLink cover direction="left" hex="#1ca086" to="/story">
           Story
-        </StyledLink>
-        <StyledLink
+        </ButtonLink>
+        <ButtonLink
           css={`
             margin-left: 1rem;
           `}
           to="/blog"
         >
           Blog
-        </StyledLink>
+        </ButtonLink>
       </div>
     </div>
   );

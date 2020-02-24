@@ -8,7 +8,7 @@ export default props => (
   <Chapter title="The One After 'I Do'">
     <div style={{ textAlign: `center` }}>
       <Img fluid={props.data.image.childImageSharp.fluid} />
-      <AniLink paintDrip to="/story/5" hex="#1ca086">
+      <AniLink cover direction="left" rip to="/story/5" hex="#1ca086">
         Story 5
       </AniLink>
     </div>
