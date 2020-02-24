@@ -1,12 +1,13 @@
 import React from 'react';
 import Chapter from '../../components/Chapter';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
 export default props => (
   <Chapter title="The One Where Everybody Finds Out">
     <div style={{ textAlign: `center` }}>
-      <Img fluid={props.data.image.childImageSharp.fluid} />
+      <Chapter.Image
+        fluid={props.data.image.childImageSharp.fluid}
+      ></Chapter.Image>
       <p>
         And one fine day, assuming everyone's approval, we became engaged. The
         friendship with you arose out of an, at first, seemingly casual

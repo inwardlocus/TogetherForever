@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import Img from 'gatsby-image';
+import Card from 'card-vibes';
 
 function Chapter({ title, children, ...props }) {
   return (
@@ -10,10 +12,6 @@ function Chapter({ title, children, ...props }) {
         margin: 2rem auto;
         max-width: 720px;
         padding: 0 1rem;
-
-        .gatsby-image-wrapper {
-          margin-bottom: 1rem;
-        }
       `}
       {...props}
     >
@@ -55,8 +53,17 @@ function Next({ children, to, ...props }) {
   );
 }
 
+function Image(props) {
+  return (
+    <Card style={{ width: 'auto', padding: '20px' }}>
+      <Img {...props} />
+    </Card>
+  );
+}
+
 Chapter.Quote = Quote;
 Chapter.Next = Next;
+Chapter.Image = Image;
 
 export default Chapter;
 

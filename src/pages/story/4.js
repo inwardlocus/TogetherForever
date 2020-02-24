@@ -1,12 +1,13 @@
 import React from 'react';
 import Chapter from '../../components/Chapter';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
 export default props => (
   <Chapter title="The One After 'I Do'">
     <div style={{ textAlign: `center` }}>
-      <Img fluid={props.data.image.childImageSharp.fluid} />
+      <Chapter.Image
+        fluid={props.data.image.childImageSharp.fluid}
+      ></Chapter.Image>
       <p>
         In the beginning I did not do much thinking and simply be happy,
         realizing, gradually, that you were always with me. But later we wanted

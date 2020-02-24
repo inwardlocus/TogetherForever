@@ -1,12 +1,13 @@
 import React from 'react';
 import Chapter from '../../components/Chapter';
-import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
 export default props => (
   <Chapter title="The One With The Tea Leaves">
     <div style={{ textAlign: `center` }}>
-      <Img fluid={props.data.image.childImageSharp.fluid} />
+      <Chapter.Image
+        fluid={props.data.image.childImageSharp.fluid}
+      ></Chapter.Image>
       <p>
         Whenever I tried to get nearer to you in speech, to be personal at all,
         you flew up into remote regions that are inaccessible. But then you took

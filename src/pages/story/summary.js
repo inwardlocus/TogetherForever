@@ -83,8 +83,8 @@ function Summary() {
         {IMAGES.map(image => (
           <AniLink
             className="item"
-            hex="#1ca086"
-            paintDrip
+            cover
+            direction="right"
             to={image.to}
             key={image.src}
             css={`
