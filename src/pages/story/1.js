@@ -2,7 +2,6 @@ import React from 'react';
 import Chapter from '../../components/Chapter';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export default props => (
   <Chapter title="The One With The Blind Dates">
@@ -30,9 +29,8 @@ export default props => (
       </Chapter.Quote>
       <p>
         I waited for your emergence unpredictably until one fine day I received
-        a ping from you.
+        a ping from you.{' '}
         <Chapter.Next to="/story/2">
-          {' '}
           And thus unfolded a tale of us.
         </Chapter.Next>
       </p>

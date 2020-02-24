@@ -128,16 +128,16 @@ function Summary() {
       >
         <AniLink
           css={`
-            font-size: 1.5rem;
+            /* font-size: 1.5rem; */
             color: var(--color-secondary);
             margin: 2rem auto;
-            border-bottom: 2px solid var(--color-secondary);
+            /* border-bottom: 2px solid var(--color-secondary); */
           `}
           to="/"
           cover
           direction="right"
         >
-          Home
+          ⇦ Home
         </AniLink>
       </footer>
     </div>
