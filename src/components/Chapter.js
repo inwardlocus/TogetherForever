@@ -12,6 +12,7 @@ function Chapter({ title, children, ...props }) {
         margin: 2rem auto;
         max-width: 720px;
         padding: 0 1rem;
+        text-align: center;
       `}
       {...props}
     >
