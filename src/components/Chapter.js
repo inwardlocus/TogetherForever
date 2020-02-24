@@ -1,28 +1,36 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-export default function Page({ title, children }) {
+export default function Chapter({ title, children, ...props }) {
   return (
     <div
-      style={{
-        margin: `2rem auto`,
-        maxWidth: 720,
-        padding: `0 1rem`,
-      }}
+      css={`
+        margin: 2rem auto;
+        max-width: 720px;
+        padding: 0 1rem;
+
+        .gatsby-image-wrapper {
+          margin-bottom: 1rem;
+        }
+      `}
+      {...props}
     >
       <header>
-        <h3
+        <h1
           css={`
             font-family: 'Architects Daughter', cursive;
             text-align: center;
           `}
         >
           Shiya & Japs
-        </h3>
+        </h1>
       </header>
       <h1
         css={`
           text-align: center;
+          margin-top: 3rem;
+          font-family: 'Caveat';
+          font-size: 3rem;
         `}
       >
         {title}

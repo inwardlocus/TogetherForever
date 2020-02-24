@@ -1,18 +1,18 @@
 import React from 'react';
-import Page from '../../components/Page';
+import Chapter from '../../components/Chapter';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export default props => (
-  <Page title="The One After 'I Do'">
+  <Chapter title="The One After 'I Do'">
     <div style={{ textAlign: `center` }}>
       <Img fluid={props.data.image.childImageSharp.fluid} />
       <AniLink paintDrip to="/story/5" hex="#1ca086">
         Story 5
       </AniLink>
     </div>
-  </Page>
+  </Chapter>
 );
 
 export const pageQuery = graphql`

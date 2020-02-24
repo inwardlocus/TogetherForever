@@ -1,5 +1,4 @@
 import React from 'react';
-import Page from '../../components/Page';
 import landing from '../../images/lp.jpg';
 import one from '../../images/1.jpg';
 import two from '../../images/2.jpg';
@@ -45,43 +44,77 @@ const IMAGES = [
 
 function Summary() {
   return (
-    <Page title="Summary">
-      {IMAGES.map(image => (
-        <AniLink
-          className="item"
-          hex="#1ca086"
-          paintDrip
-          to={image.to}
-          key={image.src}
+    <div
+      css={`
+        background: var(--color-primary);
+        color: var(--color-secondary);
+      `}
+    >
+      <header
+        css={`
+          display: flex;
+        `}
+      >
+        <h3
           css={`
-            width: 100%;
-
-            ${DEVICES.small} {
-              width: 50%;
-            }
-
-            ${DEVICES.extraLarge} {
-              width: 30%;
-            }
+            font-family: 'Architects Daughter', cursive;
+            text-align: center;
+            margin: 0;
           `}
         >
-          <div className="polaroid">
-            <img alt={image.caption} src={image.src} />
-            <div
-              className="caption"
-              css={`
-                font-size: 1.8rem;
-                ${DEVICES.small} {
-                  font-size: 1rem;
-                }
-              `}
-            >
-              {image.caption}
+          Shiya & Japs
+        </h3>
+      </header>
+      <h1
+        css={`
+          text-align: center;
+        `}
+      >
+        Summary
+      </h1>
+      <div
+        css={`
+          max-width: 980px;
+          margin: 0 auto;
+        `}
+      >
+        {IMAGES.map(image => (
+          <AniLink
+            className="item"
+            hex="#1ca086"
+            paintDrip
+            to={image.to}
+            key={image.src}
+            css={`
+              width: 100%;
+
+              ${DEVICES.small} {
+                width: 50%;
+              }
+
+              ${DEVICES.extraLarge} {
+                width: 30%;
+              }
+            `}
+          >
+            <div className="polaroid">
+              <img alt={image.caption} src={image.src} />
+              <div
+                className="caption"
+                css={`
+                  font-size: 1.8rem;
+                  ${DEVICES.small} {
+                    font-size: 1rem;
+                  }
+                `}
+              >
+                {image.caption}
+              </div>
             </div>
-          </div>
-        </AniLink>
-      ))}
-    </Page>
+          </AniLink>
+        ))}
+      </div>
+    </div>
   );
 }
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import Page from '../components/Page';
+import Chapter from '../components/Chapter';
 
 export default () => (
-  <Page title="Together Forever Blog">
+  <Chapter title="Together Forever Blog">
     <div style={{ textAlign: `center` }}></div>
 
     <p style={{ textAlign: `center` }}>
@@ -32,5 +32,5 @@ export default () => (
       Begin from Here.
       <br />
     </p>
-  </Page>
+  </Chapter>
 );

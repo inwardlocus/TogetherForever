@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
 :root {
-  --color-primary: #1ca086;
-  --color-secondary: #11a39b;
-  --color-tertiary: #069ba7;
-  --color-summary-background: #bc3440;
-  --color-background: #fff5f4;
+  --color-primary: #bc3440;
+  --color-secondary: #fff5f4;
+  --color-green-1: #1ca086;
+  --color-green-2: #069ba7;
+  --color-green-3: #11a39b;
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: var(--color-secondary);
+  font-family: 'Quattrocento Sans';
+}
+
+p,
+a {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+a {
+  color: var(--color-green-1);
 }
