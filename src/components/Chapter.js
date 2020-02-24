@@ -1,7 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
-export default function Chapter({ title, children, ...props }) {
+function Chapter({ title, children, ...props }) {
   return (
     <div
       css={`
@@ -39,6 +41,24 @@ export default function Chapter({ title, children, ...props }) {
     </div>
   );
 }
+
+const Quote = styled.p`
+  font-weight: bold;
+  font-style: italic;
+`;
+
+function Next({ children, to, ...props }) {
+  return (
+    <AniLink cover direction="left" to={to} {...props}>
+      {children} ⇨
+    </AniLink>
+  );
+}
+
+Chapter.Quote = Quote;
+Chapter.Next = Next;
+
+export default Chapter;
 
 export const fluidImage = graphql`
   fragment fluidImage on File {
