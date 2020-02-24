@@ -1,12 +1,13 @@
 import React from 'react';
 import ButtonLink from '../components/ButtonLink';
+import { DEVICES } from '../config';
 
 function Index() {
   return (
     <div
       css={`
         margin: 0 auto;
-        max-width: 42rem;
+        max-width: 720px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,7 +19,11 @@ function Index() {
         css={`
           font-family: 'Architects Daughter', cursive;
           margin: 0 auto 2rem;
-          font-size: 4rem;
+          font-size: 2rem;
+
+          ${DEVICES.medium} {
+            font-size: 4rem;
+          }
         `}
       >
         Shiya & Japs
