@@ -52,7 +52,7 @@ export default props => (
       We are here.
     </Chapter.Quote>
     <p>
-      <Chapter.Next to="/story/summary">Summary</Chapter.Next>
+      <Chapter.Next to="/story/summary">So here's our Utopia</Chapter.Next>
     </p>
   </Chapter>
 );

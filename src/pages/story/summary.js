@@ -18,6 +18,11 @@ const IMAGES = [
     to: '/story',
   },
   {
+    src: landing,
+    caption: 'The Romance Resonance',
+    to: '/story/0',
+  },
+  {
     src: one,
     caption: 'The One With The Blind Dates',
     to: '/story/1',
@@ -72,7 +77,7 @@ function Summary() {
           font-size: 3rem;
         `}
       >
-        Summary
+        Our Utopia
       </h1>
       <div
         css={`
