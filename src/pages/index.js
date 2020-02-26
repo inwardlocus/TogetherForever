@@ -20,6 +20,7 @@ function Index() {
           font-family: 'Architects Daughter', cursive;
           margin: 0 auto 2rem;
           font-size: 2rem;
+          color: #bc3440;
 
           ${DEVICES.medium} {
             font-size: 4rem;

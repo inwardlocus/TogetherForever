@@ -9,9 +9,9 @@ export default props => (
     ></Chapter.Image>
     <p>
       Whenever I tried to get nearer to you in speech, to be personal at all,
-      you flew up into remote regions that are inaccessible. But then you took
-      me with you. It seemed to me that it was the moment of opening the door
-      between my fear and the world that shall love me.
+      you flew up into remote regions that seemed inaccessible. But then you
+      took me with you. It seemed to me that it was the moment of opening the
+      door between my fear and the world that shall love me.
     </p>
     <p>
       Those talks and discussions and meetings were more than their literal
@@ -21,10 +21,10 @@ export default props => (
       definitely to myself the possibility of being your life partner.
     </p>
     <p>
-      With all the differences we had, we had flowed in to the same lake and we
+      With all the differences we had, we flowed in to the same lake and we
       transformed into single love. We drifted together, we dispersed in it
-      together. We were immersed in it completely. And like a river with no name
-      and reason, our love simply flowed onwards. Our season was sovereign.
+      together. And like a river with no name and reason, our love simply flowed
+      onwards. Our season was sovereign.
     </p>
     <Chapter.Quote>
       "Beyond what’s felt and seen <br />
