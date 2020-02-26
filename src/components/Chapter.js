@@ -32,6 +32,7 @@ function Chapter({ title, children, ...props }) {
           margin-top: 3rem;
           font-family: 'Caveat';
           font-size: 3rem;
+          color: #bc3440;
         `}
       >
         {title}
