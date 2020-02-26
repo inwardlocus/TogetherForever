@@ -8,7 +8,7 @@ export default props => (
       fluid={props.data.image.childImageSharp.fluid}
     ></Chapter.Image>
     <p>
-      <Chapter.Next to="/story/1">Chapter 1</Chapter.Next>
+      <Chapter.Next to="/story/0">Oh wait! There is more.</Chapter.Next>
     </p>
   </Chapter>
 );
