@@ -9,8 +9,6 @@ import five from '../../images/5.jpg';
 import './summary.css';
 import { DEVICES } from '../../config';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import ButtonLink from '../../components/ButtonLink';
-import { Link } from 'gatsby';
 
 const IMAGES = [
   {
