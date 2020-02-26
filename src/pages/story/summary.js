@@ -1,5 +1,6 @@
 import React from 'react';
 import landing from '../../images/lp.jpg';
+import zero from '../../images/0.jpg';
 import one from '../../images/1.jpg';
 import two from '../../images/2.jpg';
 import three from '../../images/3.jpg';
@@ -18,7 +19,7 @@ const IMAGES = [
     to: '/story',
   },
   {
-    src: landing,
+    src: zero,
     caption: 'The Romance Resonance',
     to: '/story/0',
   },
