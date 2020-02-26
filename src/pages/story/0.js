@@ -3,7 +3,7 @@ import Chapter from '../../components/Chapter';
 import { graphql } from 'gatsby';
 
 export default props => (
-  <Chapter title="When Shiya met Japs">
+  <Chapter title="The Romance Resonance">
     <Chapter.Image
       fluid={props.data.image.childImageSharp.fluid}
     ></Chapter.Image>
