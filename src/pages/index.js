@@ -1601,9 +1601,14 @@ const Heart = props => (
 
 function Index() {
   return (
-    <Chapter title="2 Days To Go">
+    <Chapter title="2 Days to go.">
       <Heart />
-      <p>Text here</p>
+      <p>
+        Maybe it's the way you move, <br />
+        You got me dreaming like a fool.
+        <br />
+        Can you feel my heart beating?{' '}
+      </p>
     </Chapter>
   );
 }
