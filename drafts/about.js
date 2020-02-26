@@ -1,13 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import Header from "../components/header"
-import Layout from "../components/layout"
+import React from 'react';
+import Chapter from '../components/Chapter';
 
 export default () => (
-  <Layout>
-    <div style={{ textAlign: `center` }}>
-      <Header about="Together Forever Blog" />
-    </div>
+  <Chapter title="Together Forever Blog">
+    <div style={{ textAlign: `center` }}></div>
 
     <p style={{ textAlign: `center` }}>
       Here,
@@ -36,5 +32,5 @@ export default () => (
       Begin from Here.
       <br />
     </p>
-  </Layout>
-)
+  </Chapter>
+);

@@ -1,16 +1,33 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Together Forever`,
+        short_name: `TF`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/js.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/story/*`],
+      },
+    },
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
-}
+};

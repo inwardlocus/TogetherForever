@@ -1,21 +1,31 @@
-@import url("https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
-h1 {
-  font-family: "Arvo", serif;
-  /* padding-left: 1rem;
-  background-color: darkorange;
-  border-bottom-style: solid;
-  border-bottom-color: seagreen;
-  border-bottom-width: 0.3rem; */
+:root {
+  --color-primary: #bc3440;
+  --color-secondary: #fff5f4;
+  --color-green-1: #1ca086;
+  --color-green-2: #069ba7;
+  --color-green-3: #11a39b;
 }
-p {
-  font-family: "Arvo", serif;
+
+body {
+  background-color: var(--color-secondary);
+  font-family: 'Quattrocento Sans';
+  margin: 0;
+  padding: 0;
 }
-h3 {
-  font-family: "Architects Daughter", cursive;
-  /* background-color: darkmagenta;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: white; */
+
+p,
+a {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+a {
+  color: var(--color-green-1);
+  text-decoration: none;
 }
