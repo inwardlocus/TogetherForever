@@ -21,7 +21,11 @@ function Index() {
         <div className="mouth">⌣</div>
         <div className="heart">♡</div>
       </div>
-      <p>Text here</p>
+      <p>
+        Waiting became worth. <br />
+        Like greatest miracle on earth. :) <br />
+        That's our two hearts beating as one.
+      </p>
     </Chapter>
   );
 }
