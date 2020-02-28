@@ -1,5 +1,5 @@
 import React from 'react';
-import Chapter from '../components/Chapter';
+import Chapter from '../../components/Chapter';
 import './index.css';
 
 const Heart = props => (

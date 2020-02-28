@@ -1,32 +1,52 @@
-import './index.css';
 import React from 'react';
-import Chapter from '../components/Chapter';
+import ButtonLink from '../components/ButtonLink';
 import { DEVICES } from '../config';
 
 function Index() {
   return (
-    <Chapter title="1 Day to go.">
-      <div
-        className="container"
+    <div
+      css={`
+        margin: 0 auto;
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      `}
+    >
+      <h1
         css={`
-          --size: 96px;
-          --size-big: calc(var(--size) * 1.5);
+          font-family: 'Architects Daughter', cursive;
+          margin: 0 auto 2rem;
+          font-size: 2rem;
+          color: #bc3440;
+
           ${DEVICES.medium} {
-            --size: 128px;
-            --size-big: calc(var(--size) * 1.5);
+            font-size: 4rem;
           }
         `}
       >
-        <div className="heart">♡</div>
-        <div className="mouth">⌣</div>
-        <div className="heart">♡</div>
+        Shiya & Japs
+      </h1>
+      <div
+        css={`
+          display: flex;
+        `}
+      >
+        <ButtonLink cover direction="left" hex="#1ca086" to="/story">
+          Story
+        </ButtonLink>
+        <ButtonLink
+          css={`
+            margin-left: 1rem;
+          `}
+          to="/blog"
+        >
+          Blog
+        </ButtonLink>
       </div>
-      <p>
-        Waiting became worth. <br />
-        Like greatest miracle on earth. :) <br />
-        That's our two hearts beating as one.
-      </p>
-    </Chapter>
+    </div>
   );
 }
 
